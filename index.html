@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Alura challenger - Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo">
+            <img src="./style/img/logo.svg" alt="logo">
+        </a>
+    </header>
+    <main class="container">
+        <div class="container--main">
+            <h1 class="title">Ingrese el texto aqui:</h1>
+            <textarea id="texto" class="text--input" required autofocus ></textarea>
+            <div class="note"><span class="note--exclamation">!</span>Solo letras minúsculas y sin acentos</div>
+            <div class="botones">
+                <button class ="btn btn__encriptar"> Encriptar </button>
+                <button class ="btn btn__desencriptar"> Desencriptar </button>
+            </div>
+        </div>
+        <div class="container--aside container--aside__output show">
+            <img class="img__buscando" src="./style/img/Muñeco.svg" alt="muñeco">
+            <h3>Ningún mensaje fue encontrado:</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="container--aside container--aside__output hide">
+            <textarea class="text__output">Text Ouput</textarea>
+            <button class ="btn btn__desencriptar btn__copiar"> Copiar </button>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/samuelbarrionuevo">
+            
+        </a>
+    </footer>
+</body>
+<script src="./app.js"></script>
+</html>
