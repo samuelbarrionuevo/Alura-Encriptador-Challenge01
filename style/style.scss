@@ -1,0 +1,165 @@
+@import "globals";
+
+// Empezamos con el proyecto. 
+.header{
+    padding: 2rem;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container--main{
+    flex-grow: 4;
+    flex-shrink: 1;
+    margin-bottom: 2rem;
+}
+
+.container--aside{
+    background-color: #fff;
+    margin: 0 2rem;
+    border-radius: 32px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &>img{
+        margin: 3rem;
+    }
+
+    &>p{
+        margin: 0.7rem;
+    }
+    &__output{
+        font-family: 'Inter';
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &> textarea{
+            height: 80%;
+            min-height: 40vh;
+        }
+    }
+}
+
+
+
+.title{
+    color: $color--main;
+    padding: 0 2rem;
+}
+
+textarea{
+    background-color: inherit;
+    border:none;
+    display: block;
+    margin: .8rem auto;
+    width: 90%;
+    height: 60vh;
+    resize: none;
+    color: $color--main;
+    padding: 1rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    user-select: none;
+    
+}
+
+.note{
+    margin: .8rem auto;
+    width: 90%;
+    font-size: 1.2rem;
+
+}
+.note--exclamation{
+    color: white;
+    display:inline-block ;
+    text-align: center;
+    margin: 0 0.5rem 0 1rem;
+    background-color: $color--gray;
+    width: 1.3rem;
+    border-radius: 50%;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.btn{
+    display: block;
+    font-weight: 600;
+    font-size: .8rem;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    &:hover {
+        transition: all .3s ease-in-out;
+        transform: scale(1.05);
+        }       
+    &:active {
+        transition: all .3s ease-in-out;
+        transform: scale(0.8);
+       }
+
+}
+.btn__encriptar{
+    background-color: $color--main;
+    color: #D8DFE8;
+}
+
+.btn__desencriptar{
+    background-color: #D8DFE8;
+    color: $color--main;
+    border: 1px solid $color--main;
+}
+
+.img__buscando{
+    max-width: 50%;
+}
+
+.text__output{
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: $color--gray__dark;
+    outline: none;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: end;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.hide{
+    display: none ;
+}
+.show{
+    display: block;
+    text-align: center;
+}
+@media (max-width: 641px){
+    .img__buscando {
+        display: none;
+    }
+    .container--aside > h3{
+        margin-top: 1rem;
+    }
+}

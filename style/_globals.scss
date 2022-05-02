@@ -1,0 +1,26 @@
+/* Normalize rapido  */
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,a:visited,a:active,a:hover,a:link{
+    text-decoration: none;
+    color:inherit
+}
+
+
+$color--main : #0A3871; 
+$color--gray: #67808E;
+$color--gray__dark: #67808E;
+
+
+body{
+    background-color: #f3f5fc  ;
+}
